@@ -7,7 +7,7 @@ import Map from '../components/Map'
 export default function Home() {
   /* load the map script*/
   const {isLoaded} = useLoadScript({
-    googleMapsApiKey: "AIzaSyAdPOhisNMHr5yB2q9bepyYRS5C2YZ-dAI",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY,
     libraries: ["places"],
 
   })
